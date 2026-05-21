@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #fef9f2;
+    padding: 16px;
+}
+
+.block {
+    display: flex;
+}
+
+.cpu {
+    flex: 1.5;
+}
+
+.explanation {
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+.slot {
+    display: flex;
+    justify-content: center;
+    border: 20px solid #d3e0ad;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.slot-parts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+
+#slot1,
+#slot2,
+#slot3 {
+    border: 4px solid #8e867a;
+    border-radius: 2px;
+    width: 100px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 50px;
+    text-align: center;
+    background-color: #fffaf4;
+}
+
+#stop1,
+#stop2,
+#stop3 {
+    background-color: #f78e7d;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    padding: 4px 16px;
+    box-shadow: 1px 1px 4px #ccc;
+}
+
+.coin {
+    display: flex;
+}
