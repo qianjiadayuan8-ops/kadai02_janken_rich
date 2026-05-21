@@ -5,7 +5,7 @@
 - じゃんけんの勝敗によりコインが増減する賭けじゃんけんアプリです。スロット風の演出を取り入れ、ゲーム性を持たせました。
 
 ## ③アプリのデプロイURL
-- 
+- https://qianjiadayuan8-ops.github.io/kadai02_janken_rich/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
 - ID: 今回なし
