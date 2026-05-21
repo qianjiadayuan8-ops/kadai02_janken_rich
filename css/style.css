@@ -5,67 +5,378 @@
 }
 
 body {
-    background-color: #fef9f2;
-    padding: 16px;
+  background: #fff8ee;
+  padding: 20px;
+  color: #6f5a45;
+  font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0 24px;
+  font-size: 40px;
+  font-weight: 900;
+  color: #7a634b;
+  letter-spacing: 0.08em;
+  text-shadow: 2px 3px 0 #f6d9a4;
 }
 
 .block {
-    display: flex;
+  display: flex;
+  gap: 16px;
+  max-width: 720px;
+  margin: 0 auto 22px;
+  align-items: stretch;
 }
 
 .cpu {
-    flex: 1.5;
+  flex: 1.5;
+  background: #fffdf8;
+  border: 3px solid #eadfce;
+  border-radius: 22px;
+  box-shadow: 0 5px 0 #e6d7bd;
+  padding: 16px;
+}
+
+.cpu-text {
+  display: inline-block;
+  background: #78b7df;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 48px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+.hand {
+  font-size: 72px;
+  line-height: 1;
 }
 
 .explanation {
-    flex: 1;
+  flex: 1;
+  background: #fffdf8;
+  border: 3px solid #eadfce;
+  border-radius: 18px;
+  box-shadow: 0 5px 0 #e6d7bd;
+  padding: 14px;
+}
+
+.explanation-text {
+  background: #83bd6a;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+  text-align: left;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dashed #eadfce;
+  padding: 10px 4px;
+  font-weight: bold;
+}
+
+li span {
+  color: #f37c5f;
+  font-size: 24px;
 }
 
 .slot {
-    display: flex;
-    justify-content: center;
-    border: 20px solid #d3e0ad;
-    border-radius: 10px;
-    width: fit-content;
-    margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 0 auto 24px;
+  padding: 18px;
+  background: #cfe3a7;
+  border: 8px solid #b8d28d;
+  border-radius: 26px;
+  box-shadow: inset 0 0 0 4px #e8f2cf, 0 8px 0 #d9c9a9;
 }
 
 .slot-parts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 #slot1,
 #slot2,
 #slot3 {
-    border: 4px solid #8e867a;
-    border-radius: 2px;
-    width: 100px;
-    height: 150px;
-    line-height: 150px;
-    font-size: 50px;
-    text-align: center;
-    background-color: #fffaf4;
+  width: 120px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 58px;
+  text-align: center;
+  background: linear-gradient(#fffdf7, #f4ead9);
+  border: 5px solid #8d8375;
+  border-radius: 12px;
+  box-shadow: inset 0 10px 18px rgba(0,0,0,0.12);
 }
 
 #stop1,
 #stop2,
 #stop3 {
-    background-color: #f78e7d;
-    color: #fff;
-    border: 3px solid #fff;
-    border-radius: 50px;
-    padding: 4px 16px;
-    box-shadow: 1px 1px 4px #ccc;
+  background: linear-gradient(#ff9f90, #ef6f61);
+  color: #fff;
+  border: 4px solid #fff;
+  border-radius: 999px;
+  padding: 8px 28px;
+  font-size: 18px;
+  font-weight: 900;
+  box-shadow: 0 4px 0 #d86b5d;
+  cursor: pointer;
 }
 
 .coin {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  max-width: 720px;
+  margin: 0 auto 20px;
+}
+
+.coin > div {
+  flex: 1;
+  background: #fffdf8;
+  border: 3px solid #eadfce;
+  border-radius: 18px;
+  box-shadow: 0 5px 0 #e6d7bd;
+  overflow: hidden;
+}
+
+.coin p:first-child {
+  background: #80bde2;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.coin div:nth-child(2) p:first-child {
+  background: #9fcd78;
+}
+
+.coin p:last-child {
+  padding: 18px;
+  font-size: 34px;
+  font-weight: 900;
+  color: #f2765d;
+}
+
+body > button {
+  display: block;
+  width: 360px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 12px 20px;
+  background: linear-gradient(#ffd95c, #ffc431);
+  border: 4px solid #f3b421;
+  border-radius: 22px;
+  box-shadow: 0 6px 0 #d99a12;
+  color: #6f5a45;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+body > button p:first-child {
+  font-size: 28px;
+}
+
+body > button p:last-child {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 4px 18px;
+  background: rgba(111, 90, 69, 0.8);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .block,
+  .coin {
+    gap: 10px;
+  }
+
+  .cpu,
+  .explanation,
+  .coin > div {
+    min-width: 0;
+  }
+
+  .cpu-text,
+  .explanation-text {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .hand {
+    font-size: 52px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+
+  li span {
+    font-size: 18px;
+  }
+
+  .coin p:first-child {
+    font-size: 14px;
+  }
+
+  .coin p:last-child {
+    font-size: 24px;
+    padding: 14px;
+  }
+
+  .slot {
+    gap: 6px;
+    padding: 12px;
+    border-width: 6px;
+  }
+
+  #slot1,
+  #slot2,
+  #slot3 {
+    width: 88px;
+    height: 135px;
+    line-height: 135px;
+    font-size: 44px;
+  }
+
+  #stop1,
+  #stop2,
+  #stop3 {
+    padding: 7px 16px;
+    font-size: 14px;
+  }
+
+  body {
+    padding: 8px;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .block {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .cpu,
+  .explanation {
+    padding: 8px;
+    border-radius: 14px;
+    box-shadow: 0 3px 0 #e6d7bd;
+  }
+
+  .cpu-text,
+  .explanation-text {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-bottom: 6px;
+  }
+
+  .hand {
+    font-size: 42px;
+  }
+
+  li {
+    padding: 5px 2px;
+    font-size: 11px;
+  }
+
+  li span {
+    font-size: 15px;
+  }
+
+  .slot {
+    gap: 5px;
+    padding: 9px;
+    border-width: 5px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+  }
+
+  .slot-parts {
+    gap: 6px;
+  }
+
+  #slot1,
+  #slot2,
+  #slot3 {
+    width: 78px;
+    height: 105px;
+    line-height: 105px;
+    font-size: 38px;
+    border-width: 4px;
+  }
+
+  #stop1,
+  #stop2,
+  #stop3 {
+    padding: 5px 13px;
+    font-size: 12px;
+    border-width: 3px;
+  }
+
+  .coin {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .coin > div {
+    border-radius: 14px;
+    box-shadow: 0 3px 0 #e6d7bd;
+  }
+
+  .coin p:first-child {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .coin p:last-child {
+    padding: 9px;
+    font-size: 20px;
+  }
+
+  body > button {
+    width: 280px;
+    padding: 8px 16px;
+    border-radius: 18px;
+    box-shadow: 0 4px 0 #d99a12;
+  }
+
+  body > button p:first-child {
+    font-size: 22px;
+  }
+
+  body > button p:last-child {
+    font-size: 12px;
+    padding: 3px 14px;
+  }
 }
