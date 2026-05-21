@@ -6,15 +6,15 @@
 
 body {
   background: #fff8ee;
-  padding: 20px;
+  padding: 10px 20px;
   color: #6f5a45;
   font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
   text-align: center;
 }
 
 h1 {
-  margin: 20px 0 24px;
-  font-size: 40px;
+  margin: 40px 0;
+  font-size: 30px;
   font-weight: 900;
   color: #7a634b;
   letter-spacing: 0.08em;
@@ -25,7 +25,7 @@ h1 {
   display: flex;
   gap: 16px;
   max-width: 720px;
-  margin: 0 auto 22px;
+  margin: 0 auto 12px;
   align-items: stretch;
 }
 
@@ -35,7 +35,7 @@ h1 {
   border: 3px solid #eadfce;
   border-radius: 22px;
   box-shadow: 0 5px 0 #e6d7bd;
-  padding: 16px;
+  padding: 10px 16px;
 }
 
 .cpu-text {
@@ -43,14 +43,14 @@ h1 {
   background: #78b7df;
   color: #fff;
   font-weight: bold;
-  padding: 8px 48px;
+  padding: 6px 32px;
   border-radius: 999px;
-  margin-bottom: 14px;
-  font-size: 18px;
+  margin-bottom: 8px;
+  font-size: 15px;
 }
 
 .hand {
-  font-size: 72px;
+  font-size: 52px;
   line-height: 1;
 }
 
@@ -60,16 +60,17 @@ h1 {
   border: 3px solid #eadfce;
   border-radius: 18px;
   box-shadow: 0 5px 0 #e6d7bd;
-  padding: 14px;
+  padding: 10px 14px;
 }
 
 .explanation-text {
   background: #83bd6a;
   color: #fff;
   font-weight: bold;
-  padding: 8px;
+  padding: 6px;
   border-radius: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  font-size: 14px;
 }
 
 ul {
@@ -81,13 +82,14 @@ li {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px dashed #eadfce;
-  padding: 10px 4px;
+  padding: 6px 4px;
   font-weight: bold;
+  font-size: 13px;
 }
 
 li span {
   color: #f37c5f;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .slot {
@@ -95,28 +97,28 @@ li span {
   justify-content: center;
   gap: 10px;
   width: fit-content;
-  margin: 0 auto 24px;
-  padding: 18px;
+  margin: 0 auto 12px;
+  padding: 12px;
   background: #cfe3a7;
-  border: 8px solid #b8d28d;
-  border-radius: 26px;
-  box-shadow: inset 0 0 0 4px #e8f2cf, 0 8px 0 #d9c9a9;
+  border: 6px solid #b8d28d;
+  border-radius: 22px;
+  box-shadow: inset 0 0 0 3px #e8f2cf, 0 6px 0 #d9c9a9;
 }
 
 .slot-parts {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 #slot1,
 #slot2,
 #slot3 {
-  width: 120px;
-  height: 170px;
-  line-height: 170px;
-  font-size: 58px;
+  width: 100px;
+  height: 130px;
+  line-height: 130px;
+  font-size: 48px;
   text-align: center;
   background: linear-gradient(#fffdf7, #f4ead9);
   border: 5px solid #8d8375;
@@ -131,8 +133,8 @@ li span {
   color: #fff;
   border: 4px solid #fff;
   border-radius: 999px;
-  padding: 8px 28px;
-  font-size: 18px;
+  padding: 6px 22px;
+  font-size: 15px;
   font-weight: 900;
   box-shadow: 0 4px 0 #d86b5d;
   cursor: pointer;
@@ -143,7 +145,7 @@ li span {
   justify-content: center;
   gap: 18px;
   max-width: 720px;
-  margin: 0 auto 20px;
+  margin: 0 auto 12px;
 }
 
 .coin > div {
@@ -159,8 +161,8 @@ li span {
   background: #80bde2;
   color: #fff;
   font-weight: bold;
-  padding: 10px;
-  font-size: 18px;
+  padding: 7px;
+  font-size: 15px;
 }
 
 .coin div:nth-child(2) p:first-child {
@@ -168,18 +170,18 @@ li span {
 }
 
 .coin p:last-child {
-  padding: 18px;
-  font-size: 34px;
+  padding: 10px;
+  font-size: 26px;
   font-weight: 900;
   color: #f2765d;
 }
 
 body > button {
   display: block;
-  width: 360px;
+  width: 300px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 12px 20px;
+  padding: 8px 20px;
   background: linear-gradient(#ffd95c, #ffc431);
   border: 4px solid #f3b421;
   border-radius: 22px;
@@ -190,88 +192,20 @@ body > button {
 }
 
 body > button p:first-child {
-  font-size: 28px;
+  font-size: 22px;
 }
 
 body > button p:last-child {
   display: inline-block;
   margin-top: 4px;
-  padding: 4px 18px;
+  padding: 3px 14px;
   background: rgba(111, 90, 69, 0.8);
   color: #fff;
   border-radius: 999px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 @media (max-width: 640px) {
-  body {
-    padding: 14px;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  .block,
-  .coin {
-    gap: 10px;
-  }
-
-  .cpu,
-  .explanation,
-  .coin > div {
-    min-width: 0;
-  }
-
-  .cpu-text,
-  .explanation-text {
-    font-size: 14px;
-    padding: 6px 12px;
-  }
-
-  .hand {
-    font-size: 52px;
-  }
-
-  li {
-    font-size: 12px;
-  }
-
-  li span {
-    font-size: 18px;
-  }
-
-  .coin p:first-child {
-    font-size: 14px;
-  }
-
-  .coin p:last-child {
-    font-size: 24px;
-    padding: 14px;
-  }
-
-  .slot {
-    gap: 6px;
-    padding: 12px;
-    border-width: 6px;
-  }
-
-  #slot1,
-  #slot2,
-  #slot3 {
-    width: 88px;
-    height: 135px;
-    line-height: 135px;
-    font-size: 44px;
-  }
-
-  #stop1,
-  #stop2,
-  #stop3 {
-    padding: 7px 16px;
-    font-size: 14px;
-  }
-
   body {
     padding: 8px;
     min-height: 100vh;
@@ -280,6 +214,7 @@ body > button p:last-child {
 
   h1 {
     font-size: 26px;
+    margin: 25px 0;
   }
 
   .block {
@@ -292,6 +227,7 @@ body > button p:last-child {
     padding: 8px;
     border-radius: 14px;
     box-shadow: 0 3px 0 #e6d7bd;
+    min-width: 0;
   }
 
   .cpu-text,
@@ -352,6 +288,7 @@ body > button p:last-child {
   .coin > div {
     border-radius: 14px;
     box-shadow: 0 3px 0 #e6d7bd;
+    min-width: 0;
   }
 
   .coin p:first-child {
